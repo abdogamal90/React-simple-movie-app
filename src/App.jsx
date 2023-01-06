@@ -23,7 +23,7 @@ function App() {
     <div className='app'>
       <h1>MovieLand</h1>
 
-      <div className="search">
+      <header className="search">
         <input
           type="text"
           placeholder='search for movies'
@@ -32,7 +32,7 @@ function App() {
 
         />
         <img src={SearchIcon} alt="search" onClick={() => SearchMovies(searchTerm)} />
-      </div>
+      </header>
       {movies?.length > 0 ? (
         <div className='container'>
           {movies.map((movie) => {
